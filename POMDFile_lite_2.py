@@ -205,15 +205,15 @@ VAR2D_LIST = [("RAINAREA", "MEANRAINRATE")]
 GEO2D_LIST = [("RAINAREA", "count")]
 
 print("[LOAD] Reading IMERG dataset")
-"""df_IMERG = pd.DataFrame.from_dict(
+df_IMERG = pd.DataFrame.from_dict(
     read_sds("/home/cc/SciunitTrainingFiles/IMERG_202002.HDF", REQUIRED_VARS)
 )
 
 print("[LOAD] Reading GEOS5 dataset")
 df_GEOS5 = pd.DataFrame.from_dict(
     read_sds("/home/cc/SciunitTrainingFiles/GEOS5_202002.HDF", REQUIRED_VARS)
-)"""
-
+)
+"""
 df_IMERG = pd.DataFrame.from_dict(
     read_sds("./IMERG_202002.HDF", REQUIRED_VARS)
 )
@@ -222,7 +222,7 @@ print("[LOAD] Reading GEOS5 dataset")
 df_GEOS5 = pd.DataFrame.from_dict(
     read_sds("./GEOS5_202002.HDF", REQUIRED_VARS)
 )
-
+"""
 print("[SUBSET] Selecting South America large convective storms")
 
 def subset(df):

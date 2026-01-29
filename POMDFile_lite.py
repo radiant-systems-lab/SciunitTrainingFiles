@@ -250,7 +250,7 @@ def custom_show(*args, **kwargs):
     _fig_counter["i"] += 1
     path = f"{OUT_DIR}/IMERG_vs_GEOS5_fig{_fig_counter['i']}.png"
     fig.savefig(path, dpi=200, bbox_inches="tight")
-    print(f"[SAVE] Figure saved: {path}")
+    #print(f"[SAVE] Figure saved: {path}")
     plt.close(fig)
 
 plt.show = custom_show
